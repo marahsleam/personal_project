@@ -1,0 +1,106 @@
+@font-face {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    src: url("../webfonts/fa-solid-900.woff2");
+}
+:root{
+    --div-color:#8695A4;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+  }
+
+/* start nav */
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3%;
+}
+nav ul li {
+list-style: none;
+display:inline-block;
+padding-left: 1.5rem;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color:var(--background-color);
+}
+ /* Small screens */
+ @media (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+    nav .icons-menu:hover+ul{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        gap: 1.5rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+    }
+
+/* end nav */
+/* start section */
+.section1 h1{
+    margin-left: 235px;
+    margin-bottom: 50px;
+}
+.plogs{
+    margin-left: 10%;
+}
+hr{
+    margin: 0 10%;
+}
+.coment {
+    display: inline-block;
+}
+.coment p{
+    color: var(--div-color);
+}
+@media (min-width:767px) {
+    .plogs{
+        flex-direction: column-reverse;
+      padding-left: -40%;
+      align-items: center;
+    }
+}
+/* end section */
+/* start footer */
+.footer{
+    justify-content: space-evenly;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8%;
+}
+.footer i{
+    font-size: 3em;
+}
+.footer i:hover{
+    background-color:var(--background-color);
+}
+.footer p{
+    font-size: 30px;
+}
+/* end footer */
